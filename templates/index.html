@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chicken Cam</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}"/>
+</head>
+<body>
+<!--<h1>Chicken Cam 🐔</h1>-->
+<header>
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="chicn cam logo" height="50px">
+</header>
+<img src="{{ url_for('video_feed') }}" alt="video feed">
+</body>
+</html>
